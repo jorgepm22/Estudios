@@ -4,7 +4,7 @@ import { AppComponent } from './app.component';
 import { DetalleComponent } from './detalle/detalle.component';
 import { LugaresComponent } from './lugares/lugares.component';
 const appRoutes : Routes = [
-    {path:'detalle', component:DetalleComponent },
+    {path:'detalle/:id', component:DetalleComponent },
     {path:'lugares', component:LugaresComponent }
 ];
 @NgModule({

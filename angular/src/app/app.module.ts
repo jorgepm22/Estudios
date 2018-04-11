@@ -27,6 +27,6 @@ import { LugaresComponent } from './lugares/lugares.component';
     })
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, DetalleComponent, LugaresComponent]
 })
 export class AppModule { }

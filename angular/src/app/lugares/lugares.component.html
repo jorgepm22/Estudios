@@ -25,7 +25,7 @@
     <div class="col-md-8">
       <ul class="list-group">
         <ng-container *ngFor="let lugar of lugares; let i = index" [ngSwitch]="lugar.cercania">
-          <a ><li class="list-group-item" contar-clicks [ngClass]="{numero_par: (i+1) % 2 !== 0}" [ngStyle]="{color: (lugar.active)? 'black' : 'gray'}" [resaltar]="lugar.plan" valida="true" >
+          <a routerLink="/detalle/{{lugar.id}}" [queryParams]="{action:'view', referer:'google'}"><li class="list-group-item" contar-clicks [ngClass]="{numero_par: (i+1) % 2 !== 0}" [ngStyle]="{color: (lugar.active)? 'black' : 'gray'}" [resaltar]="lugar.plan" valida="true" >
             {{lugar.nombre}} - 
             <span *ngSwitchCase="1" [ngStyle]="{color:'green'}">Muy cercano</span>
             <span *ngSwitchCase="2" [ngStyle]="{color:'red'}">Cercano</span>

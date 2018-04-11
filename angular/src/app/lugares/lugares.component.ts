@@ -11,9 +11,9 @@ export class LugaresComponent implements OnInit {
   property= true;
   nombre:string = ""
   lugares:any = [
-    {plan :"pagado",cercania: 1, distancia:10, active: true,nombre: "floreria"},
-    {plan :"gratuito",cercania: 2, distancia:100,active: false,nombre: "guarderia"},
-    {plan :"gratuito",cercania: 3, distancia:1000,active: true,nombre: "lol"}
+    {id: 1,plan :"pagado",cercania: 1, distancia:10, active: true,nombre: "floreria"},
+    {id: 2,plan :"gratuito",cercania: 2, distancia:100,active: false,nombre: "guarderia"},
+    {id: 3,plan :"gratuito",cercania: 3, distancia:1000,active: true,nombre: "lol"}
   ]
   lat :number = 0
   lng : number = 0
